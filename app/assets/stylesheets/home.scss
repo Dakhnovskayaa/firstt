@@ -1,0 +1,312 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+    font-family: "Walsheim";
+    src: url(asset-path('GT-Walsheim-Pro-Regular.ttf')) format("truetype");
+}
+
+body{
+    line-height: 1.2;
+    margin: 0;
+    font-family: "Walsheim";
+}
+
+
+.navbar{
+    padding: 20px;
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1340px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentText{
+   text-align: center;
+   margin-top: 100px;
+   max-width: 530px;
+}
+.contentText h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #363945;
+ }
+
+ .contentText p{
+    font-size: 15px;
+    color: #5B6B7F;
+    line-height: 1.5;
+    text-align: center;
+ }
+
+.Logo{
+    margin: 0 3px 10px 0;
+    vertical-align: -55%;  
+    cursor: pointer;
+    width: 31px;
+    height: 27px;
+
+}
+.login{
+    color: #2A2D35;
+}
+.WistiaLogo{
+margin: 0 5px 5px 0;
+vertical-align: -55%;
+cursor: pointer;
+}
+.signupForm{
+    margin-top: 30px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.sign{
+    border-radius:4px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.24);
+    box-sizing:border-box;
+    display: flex;
+    font-size:14px;
+    padding:16px 15px;
+    width: 100%;
+    margin-top: 30px; 
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.lineOr {
+    position: relative;
+    padding-top: 30px;
+}
+.or{
+    position: absolute;
+    left: 45%;
+    top: 29px;
+    font-size: 13px;
+    background: #fff;
+    padding: 0 10px;
+    color: #5B6B7F;
+    font-style: italic;
+ 
+
+}
+.container{
+    margin-top: 30px;
+}
+.signupForm__row{
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-right: -25px;
+}
+.SignupForm__input{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 65px;
+    font-size: 14px;
+    margin: 0 25px 15px 0;
+    flex: 1 1 150px;
+    box-sizing: inherit;
+}
+
+
+.SignupForm__input input{
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 5px 10px 20px;
+    border: 1px solid #D6DADE;
+    border-radius: 0;
+
+}
+
+.SignupForm__input select{
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 5px 10px 20px;
+    border: 1px solid #D6DADE;
+    border-radius: 0;
+    background: transparent;
+    color: #2a2d35;
+}
+
+.SignupForm__submit{
+    max-width: 100%;
+    background: rgb(62, 169, 245);
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: flex;  
+}
+.SignupForm__submit:hover{
+    max-width: 100%;
+    background: rgb(62, 169, 245);
+    height: 50px;
+    box-shadow: 0 5px rgb(6, 145, 242);;
+    padding-top: 5px; 
+    margin-top: 15px;
+    border-radius: 5px;
+    display: flex;  
+}
+
+.SignupForm__submit button{
+    color: #fff;
+    align-self: center;
+    width: 100%;
+}
+
+.SignupForm__terms{
+    color: #9CA8B7;
+    flex: 1 1 120px;
+    font-size: 13px;
+    line-height: 1.3em;
+    margin: 15px 70px 0;
+    text-align: center;
+}
+
+.SignupForm__terms a{
+    color: #9CA8B7;
+    
+}
+.split{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.split_content{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    margin-bottom: 8px;
+    color: #363945;
+    line-height: 1.4;
+   
+
+}
+
+.Split__panel_padded{
+    flex: 0 1 450px;
+    -webkit-flex: 0 1 450px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 15px;
+    line-height: 25px;
+    color: #5B6B7F;
+}
+.Split__panel_padded a{
+    color: #3EA9F5;
+}
+
+.Split__panel_padded h3{
+    font-size: 15px;
+    line-height: 25px;
+    color: #2A2D35;
+    margin-top: 30px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer a{
+     text-decoration: none;
+     
+}
+.footer_social{
+    flex: 2 1 370px;
+
+}
+
+.footer_social a{
+    color: #56BE8E;
+}
+.footer_social, .footer__navigation{
+    padding: 90px 60px;
+}
+.footer__navigation, .navigation_colum{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 5 1 auto;
+}
+.footer__navigation a{
+    color: #363945;
+
+}
+.footer__navigation h3{
+    color: #9CA8B7;
+    font-size: 11px;
+    font-weight: 800;
+}
+.footer__copyright{
+    display: flex;
+    justify-content: center;
+    color: #B2B9C1;
+}
+.footer__copyright a{
+    color: #B2B9C1;
+}
+.footer_navigation_column{
+    flex: 1 1 180px;
+    flex-direction: column;
+    padding: 15px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.social_show{
+    display: none;
+}
+
+.footer__copyright{
+    margin: 30px 60px;
+}
+@media screen and (max-width: 900px) {
+    .split_content{
+    display: block;
+    margin: 0 auto   
+    }
+    .content, .signupForm{
+        padding: 0 10px;
+    }
+    .social_hide{
+        display: none;
+    }
+    .social_show{
+        display: flex;
+        justify-content: center;
+    }
+    .Icon{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .footer_social, .footer__navigation{
+        padding: 20px 20px;
+    }
+    .footer__navigation{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1/1;
+        margin: 0 auto;
+    }
+   
+}
