@@ -57,11 +57,20 @@ body{
 .login{
     color: #2A2D35;
 }
+.login_text{
+    text-decoration: none; 
+    color: #3EA9F5;
+}
 .WistiaLogo{
 margin: 0 5px 5px 0;
 vertical-align: -55%;
 cursor: pointer;
 }
+
+.free_account{
+    color: #3EA9F5;
+}
+
 .signupForm{
     margin-top: 30px;
     max-width: 450px;
@@ -88,9 +97,17 @@ button{
     position: relative;
     padding-top: 30px;
 }
+
+.sign_up_with{
+    text-indent: 20px;
+    justify-content: center;
+}
 .or{
     position: absolute;
     left: 45%;
+    width: 10%;
+    box-sizing: border-box; 
+    text-align: center;
     top: 29px;
     font-size: 13px;
     background: #fff;
@@ -155,9 +172,7 @@ button{
     max-width: 100%;
     background: rgb(62, 169, 245);
     height: 50px;
-    box-shadow: 0 5px rgb(6, 145, 242);;
-    padding-top: 5px; 
-    margin-top: 15px;
+    box-shadow: 0 5px #0691F2;
     border-radius: 5px;
     display: flex;  
 }
@@ -227,18 +242,29 @@ button{
 }
 .footer_social{
     flex: 2 1 370px;
-
+   
+}
+.footer_social p{
+    max-width: 350px;
+   
+}
+.footer_wista{
+    position: absolute;
+    font-size: 30px;
 }
 
+.install{
+   color: #FD9786 !important;
+} 
 .footer_social a{
     color: #56BE8E;
 }
 .footer_social, .footer__navigation{
-    padding: 90px 60px;
+    padding: 0 60px 90px 60px;
 }
 .footer__navigation, .navigation_colum{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex: 5 1 auto;
 }
 .footer__navigation a{
@@ -259,10 +285,14 @@ button{
     color: #B2B9C1;
 }
 .footer_navigation_column{
-    flex: 1 1 180px;
+    flex: 1 1 190px;
     flex-direction: column;
     padding: 15px;
 }
+.social_hide{
+    margin-top: 160px;
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -274,10 +304,22 @@ ul{
 .footer__copyright{
     margin: 30px 60px;
 }
+
+.Icon{
+    color:#56BE8E;
+    width:35px
+}
 @media screen and (max-width: 900px) {
     .split_content{
     display: block;
-    margin: 0 auto   
+    margin: 0 auto;
+    max-width: 480px;   
+    }
+    .footer_wista{
+        position: inherit;
+        font-size: 30px;
+        height: 100%;
+        max-width: -webkit-fill-available !important;
     }
     .content, .signupForm{
         padding: 0 10px;
@@ -293,20 +335,34 @@ ul{
         padding: 5px;
     }
 }
-
+.footer_hr{
+    border-left: 1px solid #B2B9C1;
+    height: 200px;
+}
 @media screen and (max-width: 1024px) {
     .footer{
     flex-direction: row;
     flex-wrap: wrap;
     }
-    .footer_social, .footer__navigation{
-        padding: 20px 20px;
+    .footer_hr{
+        display: none;
     }
     .footer__navigation{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column: 1/1;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 5 1 auto;
         margin: 0 auto;
     }
+    .footer_wista{
+        border: none;
+    }
    
+}
+@media screen and (min-width: 1023px) and (max-width: 1111px){
+    .footer__navigation, .navigation_colum{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 5 1 auto; 
+        
+    }
 }
